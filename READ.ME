@@ -1,0 +1,6 @@
+run npm start
+run your stripe CLI on local machine and add below command:
+stripe listen --forward-to localhost:3000/webhook
+go to your browser and hit localhost:3000
+enter test card data and you'll notice that a new order created in your DB 
+notice the status changing of the order depending on what we get from webhook Api
